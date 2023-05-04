@@ -14177,6 +14177,7 @@ typedef void* <name>MTLSharedEvent_id</name>;
             <param><type>uint32_t</type> <name>stageCount</name></param>
             <param len="stageCount">const <type>VkShaderStageFlagBits</type>* <name>pStages</name></param>
             <param optional="true,true" len="stageCount">const <type>VkShaderEXT</type>* <name>pShaders</name></param>
+        </command>
         <command successcodes="VK_SUCCESS" errorcodes="VK_ERROR_OUT_OF_HOST_MEMORY,VK_ERROR_OUT_OF_DEVICE_MEMORY,VK_ERROR_SURFACE_LOST_KHR">
             <proto><type>VkResult</type> <name>vkGetSwapchainTimingPropertiesEXT</name></proto>
             <param><type>VkDevice</type> <name>device</name></param>
