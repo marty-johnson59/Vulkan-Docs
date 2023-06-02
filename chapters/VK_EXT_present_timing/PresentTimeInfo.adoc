@@ -143,9 +143,13 @@ include::{generated}/api/enums/VkPresentStageFlagBitsEXT.adoc[]
   * ename:VK_PRESENT_STAGE_IMAGE_LATCHED_BIT_EXT is the stage after which the
     image has been latched by a downstream entity, such as a compositor, and
     scheduled to be presented to the user.
-  * ename:VK_PRESENT_STAGE_IMAGE_FIRST_PHOTON_BIT_EXT is the stage after which
-    a display hardware has started emitting light for the presentation
-    request associated with the image to be presented.
+  * ename:VK_PRESENT_STAGE_IMAGE_FIRST_PIXEL_OUT_BIT_EXT is the stage after
+    which data for the first pixel of the presentation request associated with
+    the image has left the presentation engine or another downstream entity for
+    a display hardware.
+  * ename:VK_PRESENT_STAGE_IMAGE_FIRST_PIXEL_VISIBLE_BIT_EXT is the stage
+    after which a display hardware has made the first pixel visible for the
+    presentation request associated with the image to be presented.
 
 --
 
