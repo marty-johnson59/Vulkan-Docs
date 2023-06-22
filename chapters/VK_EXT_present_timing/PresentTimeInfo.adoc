@@ -135,18 +135,17 @@ which can: be set to specify present stages are:
 
 include::{generated}/api/enums/VkPresentStageFlagBitsEXT.adoc[]
 
-  * ename:VK_PRESENT_STAGE_IMAGE_HANDOFF_BIT_EXT is the stage after which the
-    presentation engine has passed the presentation request of the image to
-    a system-specific entity that is outside the control of the Vulkan
-    implementation. This stage is the only ename:VkPresentStageFlagBitsEXT
-    that is required: to be supported.
+  * ename:VK_PRESENT_STAGE_IMAGE_HANDOFF_BIT_EXT is the stage after which
+    the presentation request of the image has been passed to a
+    system-specific entity of the presentation engine that is outside the
+    control of the Vulkan implementation. This stage is the only
+    ename:VkPresentStageFlagBitsEXT that is required: to be supported.
   * ename:VK_PRESENT_STAGE_IMAGE_LATCHED_BIT_EXT is the stage after which the
-    image has been latched by a downstream entity, such as a compositor, and
-    scheduled to be presented to the user.
+    image associated with the presentation request has been latched by the
+    presentation engine to create the presentation of a future refresh cycle.
   * ename:VK_PRESENT_STAGE_IMAGE_FIRST_PIXEL_OUT_BIT_EXT is the stage after
     which data for the first pixel of the presentation request associated with
-    the image has left the presentation engine or another downstream entity for
-    a display hardware.
+    the image has left the presentation engine for a display hardware.
   * ename:VK_PRESENT_STAGE_IMAGE_FIRST_PIXEL_VISIBLE_BIT_EXT is the stage
     after which a display hardware has made the first pixel visible for the
     presentation request associated with the image to be presented.

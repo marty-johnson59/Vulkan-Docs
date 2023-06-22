@@ -367,7 +367,7 @@ include::{generated}/api/structs/VkPastPresentationTimingEXT.adoc[]
   * pname:timeDomainChanged is ename:VK_TRUE if the time domain enabled for
     the swapchain is not currently available.
   * pname:reportComplete is ename:VK_TRUE if the presentation engine
-    has reported all the required results in pname:pPresentStages.
+    has reported all the requested results in pname:pPresentStages.
 
 Timing information for some present stages may: have a time value of 0,
 indicating that results for that present stage are not available.
